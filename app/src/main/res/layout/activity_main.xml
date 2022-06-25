@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="377dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:shadowColor="@android:color/black"
+        android:textColor="@color/black"
+        android:textColorHighlight="#8BC34A"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultat" />
+
+    <EditText
+        android:id="@+id/idheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="textPersonName|text"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="@+id/idweight"
+        app:layout_constraintTop_toBottomOf="@+id/idweight" />
+
+    <Button
+        android:id="@+id/idlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Calculate"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/idheight"
+        app:layout_constraintStart_toStartOf="@+id/idheight"
+        app:layout_constraintTop_toBottomOf="@+id/idheight" />
+
+    <Button
+        android:id="@+id/idlogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Consult products"
+        android:textColor="#CDDC39"
+        android:textColorHighlight="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="@+id/idheight"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/idheight"
+        app:layout_constraintTop_toBottomOf="@+id/idheight" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="238dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="164dp"
+        android:background="@color/teal_200"
+        android:text="IMC"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@color/design_default_color_error"
+        android:textColorHint="@color/design_default_color_error"
+        android:textColorLink="@color/design_default_color_error"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="158dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

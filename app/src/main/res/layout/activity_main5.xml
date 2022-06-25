@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoand"
+    android:visibility="visible"
+    tools:context=".MainActivity5"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcaa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="91dp"
+        android:background="#0C0C0C"
+        android:fontFamily="monospace"
+        android:text="Les BCAA interviennent sur plusieurs fronts, les rendant très utiles pour les sportifs. En effet, ils sont reconnus pour améliorer la synthèse des protéines (3). Cela permet de préserver le tissu musculaire évitant donc le catabolisme. Même si vous passez un certain moment sans entraînement, le fait de consommer des BCAA peut vous aider à minimiser la perte de vos muscles. De plus, si vous optez pour des BCAA en poudre avec un délicieux goût, ils peuvent être l’alternative parfaite aux boissons sucrées et néfastes pour votre santé"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
